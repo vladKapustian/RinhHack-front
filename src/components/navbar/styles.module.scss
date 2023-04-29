@@ -1,2 +1,78 @@
-.div {
+.container {
+  background: linear-gradient(89.59deg, rgba(181, 75, 151, 0.4) -1.4%, rgba(124, 165, 233, 0.4) 100%);
+  max-height: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-family: Inter, sans-serif;
+    padding: 0px 20px;
+    color: whitesmoke;
+  }
+  .leftSideContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .radioContiner {
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    .radioButton {
+      border-radius: 2px;
+      border-width: 2px;
+      box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.016);
+      user-select: none;
+      margin: 0px 4px;
+      background-color: transparent;
+    }
+
+    .radioButton:disabled {
+      border-color: pink;
+    }
+  }
+  .rightSideContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .statisticsContainer {
+      display: flex;
+      flex-direction: row;
+
+      .statisticsCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 16px;
+
+        .statisticsBadge {
+          max-height: 22px;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        .statisticsNumber {
+          margin: 0;
+          padding: 0;
+          max-height: 44px;
+          height: 100%;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 45px;
+      margin: 0px 20px;
+    }
+  }
 }
